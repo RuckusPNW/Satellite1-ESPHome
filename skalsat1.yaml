@@ -64,8 +64,8 @@ substitutions:
   mute_switch_on_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/mute_switch_on.flac
   mute_switch_off_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/mute_switch_off.flac
   timer_finished_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/timer_finished.flac
-  wake_word_triggered_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/wake_word_triggered.flac
-  wake_sound: "No Sound" # Initial Wake Sound select option. Users can change this live after boot.
+  wake_word_triggered_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/lyra_mhm.wav
+  wake_sound: "Wake Word Triggered" # Initial Wake Sound select option. Users can change this live after boot.
   wake_sound_catalog_package: github://TaterTotterson/microWakeWords/shared/wake_sounds.yaml@main
   wake_sound_script_package: github://TaterTotterson/microWakeWords/sat1/wake_sound_scripts.yaml@main
   jack_connected_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/jack_connected.flac
