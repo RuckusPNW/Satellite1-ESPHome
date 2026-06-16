@@ -43,7 +43,7 @@ substitutions:
   # -----------------------------
   # TRAINER APP
   # -----------------------------
-  trainer_app_url: "http://192.168.84.24:8789"
+  trainer_app_url: !secret trainer_app_url
 
   # -----------------------------
   # WAKE WORD SENSITIVITY (probability cutoff)
