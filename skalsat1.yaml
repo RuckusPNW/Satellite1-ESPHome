@@ -269,24 +269,6 @@ packages:
   TaterTotterson.WakeSoundCatalog: ${wake_sound_catalog_package}
   TaterTotterson.WakeSoundScript: ${wake_sound_script_package}
 
-# -----------------------------
-# LOCAL OVERRIDES
-# (extends entities defined by the TaterTotterson.Sat1 package above
-#  without forking it - see substitutions for the actual values)
-# -----------------------------
-text:
-  # Point the trainer app text entity's default at our own trainer server
-  - id: !extend trainer_app_url
-    initial_value: "${trainer_app_url}"
-
-select:
-  # Lock the wake engine to microwakeword only - openWakeWord/nanoWakeWord
-  # server URLs above are unused stubs while this is locked
-  - id: !extend wake_engine_select
-    options:
-      - microwakeword
-    initial_option: ${wake_engine}
-
 wifi:
   ssid: ${wifi_ssid}
   password: ${wifi_password}
@@ -328,8 +310,8 @@ memory_flasher:
     auto_flash: true
     embed_flash_image:
       image_version: ${xmos_fw_version}
-      image_file: https://raw.githubusercontent.com/FutureProofHomes/Documentation/main/assets/firmware/xmos/${xmos_fw_version}/satellite1_firmware_fixed_delay.factory.bin
-      md5: 5f5788ecb240082f61acd36f247ea3b2
+      image_file: https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/xmos/${xmos_fw_version}/satellite1_firmware_fixed_delay.factory.bin
+      md5_file: https://raw.githubusercontent.com/FutureProofHomes/Documentation/refs/heads/main/assets/firmware/xmos/${xmos_fw_version}/satellite1_firmware_fixed_delay.factory.md5
 
     on_flashing_start:
       then:
