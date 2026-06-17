@@ -38,7 +38,7 @@ substitutions:
   openwakeword_max_failures: "3"
   wake_word_name: hey_lyra
   wake_word_model_url: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/models/hey_lyra.json
-  wake_model_stop_url: https://raw.githubusercontent.com/TaterTotterson/microWakeWords/main/shared/assets/wake_words/stop.json
+  wake_model_stop_url: https://raw.githubusercontent.com/RuckusPNW/microWakeWords/main/shared/assets/wake_words/stop.json
 
   # -----------------------------
   # TRAINER APP
@@ -66,8 +66,8 @@ substitutions:
   timer_finished_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/timer_finished.flac
   wake_word_triggered_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/lyra_mhm.wav
   wake_sound: "Default" # Initial Wake Sound select option - uses wake_word_triggered_sound_file (lyra_mhm.wav)
-  wake_sound_catalog_package: github://TaterTotterson/microWakeWords/shared/wake_sounds.yaml@main
-  wake_sound_script_package: github://TaterTotterson/microWakeWords/sat1/wake_sound_scripts.yaml@main
+  wake_sound_catalog_package: github://RuckusPNW/microWakeWords/shared/wake_sounds.yaml@main
+  wake_sound_script_package: github://RuckusPNW/microWakeWords/sat1/wake_sound_scripts.yaml@main
   jack_connected_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/jack_connected.flac
   jack_disconnected_sound_file: https://raw.githubusercontent.com/RuckusPNW/Satellite1-ESPHome/dev/sounds/jack_disconnected.flac
 
@@ -234,7 +234,7 @@ logger:
 external_components:
   - source:
       type: git
-      url: https://github.com/TaterTotterson/microWakeWords
+      url: https://github.com/RuckusPNW/microWakeWords
       ref: main
       path: sat1/components
     components:
@@ -249,8 +249,8 @@ external_components:
     refresh: 1h
 
 packages:
-  TaterTotterson.Sat1:
-    url: https://github.com/TaterTotterson/microWakeWords
+  RuckusPNW.Sat1:
+    url: https://github.com/RuckusPNW/microWakeWords
     ref: main
     files:
       - sat1/dashboard_build.yaml
@@ -270,8 +270,8 @@ packages:
       # - sat1/mmwave_ld2450.yaml
       # - sat1/debug.yaml
       # - sat1/developer.yaml
-  TaterTotterson.WakeSoundCatalog: ${wake_sound_catalog_package}
-  TaterTotterson.WakeSoundScript: ${wake_sound_script_package}
+  RuckusPNW.WakeSoundCatalog: ${wake_sound_catalog_package}
+  RuckusPNW.WakeSoundScript: ${wake_sound_script_package}
 
 wifi:
   ssid: ${wifi_ssid}
