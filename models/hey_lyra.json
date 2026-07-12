@@ -1,8 +1,8 @@
 {
   "type": "micro",
   "wake_word": "Hey Lyra",
-  "author": "Tater Totterson",
-  "website": "https://github.com/TaterTotterson/microWakeWord-Trainer-Nvidia-Docker.git",
+  "author": "RuckusPNW",
+  "website": "https://github.com/RuckusPNW/microWakeWord-Trainer-Nvidia-Docker.git",
   "model": "hey_lyra.tflite",
   "trained_languages": [
     "en"
