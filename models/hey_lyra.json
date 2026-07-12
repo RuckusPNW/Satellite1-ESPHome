@@ -2,7 +2,7 @@
   "type": "micro",
   "wake_word": "Hey Lyra",
   "author": "RuckusPNW",
-  "website": "https://github.com/RuckusPNW/microWakeWord-Trainer-Nvidia-Docker.git",
+  "website": "https://github.com/RuckusPNW/microWakeWord-Trainer",
   "model": "hey_lyra.tflite",
   "trained_languages": [
     "en"
